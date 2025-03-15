@@ -457,17 +457,109 @@ background-image: linear-gradient(0deg, #6582C6 0%, #443D64 65%);
     margin-bottom: 15px;
     color: #0c0c0c;
 }
- @media (max-width: 768px) {
-    .city-card {
-        margin-left: 0px;
+/* Fully Responsive CSS without Changing HTML */
+
+/* General Responsive Fixes */
+@media (max-width: 1200px) {
+    .weather-box {
+        flex-wrap: wrap;
     }
-    .five-day-forecast{
-        margin-left: 0px;
+    .weather-card {
+        width: 100%;
+    }
+    .city-card {
+        width: 80%;
+        margin: 20px auto 0 auto;
     }
 }
-/*
+
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .search-container {
+        width: 100%;
+    }
+    .weather-box {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .weather-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
+    .left, .middle, .right {
+        text-align: center;
+        width: 100%;
+    }
+    .forecast-container, .hourly-forecast {
+        width: 100%;
+        text-align: center;
+    }
+    .forecast-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forecast-item {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .city-card {
+        width: 70%;
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .city-card, .five-day-forecast {
+        margin-left: 0;
+        width: 90%;
+        margin-top: 40px;
+    }
+    .hour-card {
+        width: 48%;
+        margin: 5px 1%;
+    }
+    .forecast-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .weather-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     .hour-card {
         width: 90%;
     }
-} */ 
+    .weather-box {
+        flex-direction: column;
+    }
+    .forecast-container {
+        text-align: center;
+    }
+    .forecast-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .city-card {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
